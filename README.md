@@ -27,36 +27,13 @@ Open the `index.html` file in your preferred web browser to view the landing pag
 
 Customize the HTML, CSS, and JavaScript code as needed to fit your specific requirements.
 
-## Customization
---------------
-
-### HTML Structure and Content
-
-Modify the HTML structure and content to suit your needs.
-
-### Tailwind CSS Classes
-
-Adjust the Tailwind CSS classes to change the styling and layout.
-
-### JavaScript Code
-
-Update the JavaScript code to handle form submission and other interactions as desired.
+#### Note:
+The email for doesn't actually work since this template is static. However, you can use formspree.io or EmailJS to collect emails via the client side.
 
 ## Deployment
 ------------
-
-### Step 1: Upload Files to Your Web Server
-
-Upload the `index.html` file and any associated assets (e.g., images, CSS files) to your web server.
-
-### Step 2: Configure Your Web Server
-
-Configure your web server to serve the `index.html` file as the default document.
-
-### Step 3: Test Your Landing Page
-
-Test your landing page by visiting the URL in your web browser.
-
+You can easily use Github Pages to host this page as a static site.
+Or deploy it on the web server of your choice.
 ## Credits
 --------
 
