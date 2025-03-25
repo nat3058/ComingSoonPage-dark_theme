@@ -10,7 +10,7 @@ A simple, responsive coming soon landing page built with HTML, Tailwind CSS, and
 * Gradient text effect using CSS background gradient and text clipping
 * Basic JavaScript functionality for email form submission and confirmation message
 * Responsive design for a great user experience on various devices
-* No build process or framework required; deploy directly to any web server
+* No build process or framework required; deploy directly to any web server including Github Pages
 
 ## Usage
 -----
