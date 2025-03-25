@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            // Custom colors if needed
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #4ade80 0%, #3b82f6 50%, #ec4899 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="container mx-auto px-4 py-6 flex justify-between items-center">
+    <!-- Logo -->
+    <div class="w-12 h-12">
+      <svg viewBox="0 0 100 100" class="w-full h-full">
+        <path
+          d="M20,50 Q35,20 50,50 Q65,80 80,50"
+          stroke="white"
+          stroke-width="4"
+          fill="none"
+        />
+      </svg>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="hidden md:block">
+      <ul class="flex space-x-4">
+        <li>Payment</li>
+        <li class="text-gray-500">/</li>
+        <li>Services</li>
+        <li class="text-gray-500">/</li>
+        <li>Account</li>
+      </ul>
+    </nav>
+
+    <!-- App Store Button -->
+    <div class="bg-zinc-800 rounded-md px-4 py-2 flex items-center space-x-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+        <path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"></path>
+        <path d="M10 2c1 .5 2 2 2 5"></path>
+      </svg>
+      <div class="flex flex-col">
+        <span class="text-xs text-gray-300">Coming Soon on</span>
+        <span class="text-sm font-medium">App Store</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 flex flex-col items-center justify-center px-4 text-center">
+    <!-- Coming Soon Text -->
+    <h1 class="text-6xl md:text-8xl font-bold mb-8 gradient-text">
+      Coming Soon
+    </h1>
+
+    <!-- Tagline -->
+    <p class="text-xl md:text-2xl max-w-2xl mb-12 text-gray-300">
+      From automation of people processes to creating 
+      <br class="hidden md:block">
+      an engaged and driven culture.
+    </p>
+
+    <!-- Email Form -->
+    <div class="w-full max-w-md mb-6">
+      <form id="email-form" class="flex">
+        <input
+          type="email"
+          id="email-input"
+          placeholder="Please enter your email address"
+          class="flex-1 px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-l-md focus:outline-none"
+          required
+        />
+        <button type="submit" class="bg-white text-black px-6 py-3 font-medium rounded-r-md hover:bg-gray-100 transition-colors">
+          Notify Me
+        </button>
+      </form>
+    </div>
+
+    <!-- Notification Text -->
+    <p class="text-gray-400 mb-16">
+      _- Notify me when App is launched _-
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container mx-auto px-4 py-6 flex justify-between text-gray-400">
+    <div>
+      <a href="#" class="hover:text-white">
+        Privacy Policy
+      </a>
+    </div>
+    <div class="space-x-2">
+      <a href="#" class="hover:text-white">
+        Facebook
+      </a>
+      <span>/</span>
+      <a href="#" class="hover:text-white">
+        Instagram
+      </a>
+      <span>/</span>
+      <a href="#" class="hover:text-white">
+        LinkedIn
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Email form submission
+    document.getElementById('email-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email-input').value;
+      console.log('Email submitted:', email);
+      alert('Thank you! We\'ll notify you when the app launches.');
+      document.getElementById('email-input').value = '';
+    });
+  </script>
+</body>
+</html>
